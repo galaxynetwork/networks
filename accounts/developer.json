@@ -1,0 +1,42 @@
+{
+    "foundation": {
+        "type": "multisig",
+        "threshold": 2,
+        "address": "galaxy1zp6q5da8d8lywde5mctvwptxvl0ekkp6e769tv",
+        "pubs": [],
+        "weight": "0.500000000000000000"
+    },
+    "teamFuterStrategy": {
+        "type": "multisig",
+        "threshold": 2,
+        "address": "galaxy1la9mah6xvdl9h5ez0my8mtyh3lgej6rz63a3ma",
+        "weight": "0.100000000000000000",
+        "pubs": []
+    },
+    "coreDevelopers": [
+        {
+            "address": "galaxy1cqnp6ejqkgxp6lgfvxq3g2drq0pjj29hers276",
+            "weight": "0.100000000000000000"
+        },
+        {
+            "address": "galaxy1exxrn8mupa0nrgx2zd5jmpvh6yhxafd4hhpf3w",
+            "weight": "0.100000000000000000"
+        },
+        {
+            "address": "galaxy1tpxdpzd67e0auczmz8v34n8a9f66c4lyxlvkly",
+            "weight": "0.050000000000000000"
+        },
+        {
+            "address": "galaxy1n4s2w70uqqurl76lxzje2g2x6m9q3ypuyt50hw",
+            "weight": "0.050000000000000000"
+        },
+        {
+            "address": "galaxy1lva3zfez6e3mccctx3q2906smkr4u0kyzh7spa",
+            "weight": "0.050000000000000000"
+        },
+        {
+            "address": "galaxy1x7d3kndrl0qtkg3s34cly7fdjrpwhn2dm8zz63",
+            "weight": "0.050000000000000000"
+        }
+    ]
+}
