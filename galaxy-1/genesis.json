@@ -41,6 +41,17 @@
             "supply": [],
             "denom_metadata": []
         },
+        "clairdrop": {
+            "module_account_balance": {
+                "denom": "uglx",
+                "amount": "0"
+            },
+            "params": {
+                "clairdrop_start_time": "0001-01-01T00:00:00Z",
+                "clairdrop_end_time": "0001-05-31T00:00:00Z"
+            },
+            "claim_records": []
+        },
         "capability": {
             "index": "1",
             "owners": []
