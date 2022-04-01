@@ -9,7 +9,7 @@ Before to register genesis validator, please check your airdrop amount on this p
 
 1. Gentxs must be submitted by Before UTC on March 30 00:00.
 2. Setting up process is almost the same as cosmos-based networks, especially Osmosis. Also, if you've participate as a validators on a cosmos-based network, this process is generally the same.
-3. As you all know, Galaxy aims to create Metaverse based on NFT and unique worldview. By starting this new journey, we need a wide range of updates continuously to make our metaverse more the universe-like. For this new journey, we all have to actively communicate and get efforts. Please join this [Galaxy Discord](https://discord.gg/GrEcUCqr) and create a new universe.(validator regiter admin : BBaBi#1114)
+3. As you all know, Galaxy aims to create Metaverse based on NFT and unique worldview. By starting this new journey, we need a wide range of updates continuously to make our metaverse more the universe-like. For this new journey, we all have to actively communicate and get efforts. Please join this [Galaxy Discord](https://discord.gg/GrEcUCqr) and create a new universe.(validator regiter admin : whiteT#0899)
 
 ## OS/Minimum server spec
 
