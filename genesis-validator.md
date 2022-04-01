@@ -27,8 +27,12 @@ Galaxy is built using Go and requires Go version 1.16+. In this example, we will
 # First remove any existing old Go installation
 sudo rm -rf /usr/local/go
 
-# Install the latest version of Go using this helpful script
-curl https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash
+# Install Go
+wget https://go.dev/dl/go1.16.6.linux-amd64.tar.gz
+
+# Decompress.
+# You may need sudo permission.
+tar -C /usr/local -xzf go1.16.6.linux-amd64.tar.gz
 
 # Update environment variables to include go
 cat <<'EOF' >>$HOME/.profile
@@ -43,7 +47,7 @@ To verify that Go is installed:
 
 ```sh
 go version
-# Should return go version go1.16.4 linux/amd64
+# Should return go version go1.16.6 linux/amd64
 ```
 
 ### Get Galaxy Source Code
@@ -73,10 +77,10 @@ galaxyd version --long
 
 name: galaxy
 server_name: galaxyd
-version: launch-gentxs-1-gd19fd2e
-commit: d19fd2e477d2abfb603658db00bc4e6328b881b8
+version: launch-gentxs
+commit: a50188d23ff33d13c6ea9ad09a4251df3de8d822
 build_tags: netgo,ledger
-go: go version go1.16.6 darwin/amd64
+go: go version go1.16.6 linux/amd64
 ```
 
 If the software version does not match, then please check your `$PATH` to ensure the correct `galaxyd` is running.
@@ -104,9 +108,9 @@ This will create a new `.galaxyd` folder in your HOME directory.
 You can now download the "pregenesis" file for the chain. This is a genesis file with the chain-id and airdrop balances.
 
 ```sh
-cd $HOME/.galaxyd/config/
+cd $HOME/.galaxy/config/
 
-curl https://media.githubusercontent.com/media/galaxies-labs/networks/main/galaxy-1/pregenesis.json > $HOME/.galaxyd/config/genesis.json
+curl https://media.githubusercontent.com/media/galaxies-labs/networks/main/galaxy-1/pregenesis.json > $HOME/.galaxy/config/genesis.json
 ```
 
 ### Import Validator Key
@@ -201,15 +205,13 @@ galaxyd gentx <key_name> 1000000uglx \
   --commission-rate="0.1" \
   --commission-max-rate="0.20" \
   --commission-max-change-rate="0.01" \
-  --min-self-delegation="1" \
-  --identity="5B5AB9D8FBBCEDC6" \
-  --pubkey="galaxyvalconspub1zcjduepqnxl4ntf8wjn0275smfll4n4lg9cwcurz2qt6dkhrjzf94up8g4cspyyzn9"
+  --min-self-delegation="1"
 ```
 
 It will show an output something similar to:
 
 ```sh
-Genesis transaction written to "/Users/ubuntu/.galaxyd/config/gentx/gentx-eb3b1768d00e66ef83acb1eee59e1d3a35cf76fc.json"
+Genesis transaction written to "/Users/ubuntu/.galaxy/config/gentx/gentx-eb3b1768d00e66ef83acb1eee59e1d3a35cf76fc.json"
 ```
 
 ### Submit Your GenTx
@@ -229,7 +231,7 @@ git clone https://github.com/<your_github_username>/networks
 4. Copy the gentx to the networks repo (ensure that it is in the correct folder)
 
 ```sh
-cp ~/.galaxyd/config/gentx/gentx-<your-moniker>.json networks/galaxy-1/gentxs/
+cp ~/.galaxy/config/gentx/gentx-<your-moniker>.json networks/galaxy-1/gentxs/
 ```
 
 5. Commit and push to your repo.
