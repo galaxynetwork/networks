@@ -106,7 +106,7 @@ You can now download the "pregenesis" file for the chain. This is a genesis file
 ```sh
 cd $HOME/.galaxyd/config/
 
-curl https://raw.githubusercontent.com/galaxies-labs/networks/main/galaxy-1/pregenesis.json > $HOME/.galaxyd/config/genesis.json
+curl https://media.githubusercontent.com/media/galaxies-labs/networks/main/galaxy-1/pregenesis.json > $HOME/.galaxyd/config/genesis.json
 ```
 
 ### Import Validator Key
