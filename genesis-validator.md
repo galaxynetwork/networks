@@ -7,7 +7,7 @@ We are at the beginning of creating our infinite, one and only universe. You are
 
 Before to register genesis validator, please check your airdrop amount on this page: https://galaxychain.zone/airdrop.
 
-1. Gentxs must be submitted by Before UTC on March 30 00:00.
+1. Gentxs must be submitted by Before UTC on April 7 00:00.
 2. Setting up process is almost the same as cosmos-based networks, especially Osmosis. Also, if you've participate as a validators on a cosmos-based network, this process is generally the same.
 3. As you all know, Galaxy aims to create Metaverse based on NFT and unique worldview. By starting this new journey, we need a wide range of updates continuously to make our metaverse more the universe-like. For this new journey, we all have to actively communicate and get efforts. Please join this [Galaxy Discord](https://discord.gg/GrEcUCqr) and create a new universe.(validator regiter admin : BBaBi#1114)
 
@@ -21,7 +21,7 @@ Before to register genesis validator, please check your airdrop amount on this p
 
 ### Install Go
 
-Galaxy is built using Go and requires Go version 1.15+. In this example, we will be installing Go on the above Ubuntu 20.04:
+Galaxy is built using Go and requires Go version 1.16+. In this example, we will be installing Go on the above Ubuntu 20.04:
 
 ```sh
 # First remove any existing old Go installation
@@ -53,7 +53,7 @@ Use git to retrieve Galaxy source code from the [official repo](https://github.c
 ```sh
 git clone https://github.com/galaxies-labs/galaxy
 cd galaxy
-git checkout v1.0.0
+git checkout launch-gentxs
 ```
 
 ## Install galaxyd
@@ -73,10 +73,10 @@ galaxyd version --long
 
 name: galaxy
 server_name: galaxyd
-version: '"1.0.0"'
-commit: *- will gonna fix -*
+version: launch-gentxs-1-gd19fd2e
+commit: d19fd2e477d2abfb603658db00bc4e6328b881b8
 build_tags: netgo,ledger
-go: go version go1.16.3 darwin/amd64
+go: go version go1.16.6 darwin/amd64
 ```
 
 If the software version does not match, then please check your `$PATH` to ensure the correct `galaxyd` is running.
@@ -105,7 +105,8 @@ You can now download the "pregenesis" file for the chain. This is a genesis file
 
 ```sh
 cd $HOME/.galaxyd/config/
-curl https://raw.githubusercontent.com/galaxy-labs/networks/main/galaxy-1/pregenesis.json > $HOME/.galaxyd/config/genesis.json
+
+curl https://raw.githubusercontent.com/galaxies-labs/networks/main/galaxy-1/pregenesis.json > $HOME/.galaxyd/config/genesis.json
 ```
 
 ### Import Validator Key
@@ -185,11 +186,11 @@ To create the genesis transaction, you will have to choose the following paramet
 - identity (keybase key hash, this is used to get validator logos in block explorers. optional)
 - pubkey (gotten in previous step)
 
-Note that your gentx will be rejected if you use an amount greater than what you have as liquid from the airdrop. Recall only 20% of your fairdrop allocation is liquid at genesis. Also, note that Galaxy has a chain-mandated minimum commission rate of 5%.**이 부분 수정 필요한지 검토 필요합니다. 에어드랍량의 20%만 유동성 이라는 문구와 최저수수료율 문구가 우리체인에 적절한가요?**
+Note that your gentx will be rejected if you use an amount greater than what you have as liquid from the airdrop. Recall only 20% of your fairdrop allocation is liquid at genesis. Also, note that Galaxy has a chain-mandated minimum commission rate of 5%.
 
 If you would like to override the memo field, use the `--ip` and `--node-id` flags.
 
-An example genesis command would thus look like: **이 아랫 부분 수정 필요한지 검토 필요합니다.**
+An example genesis command would thus look like:
 
 ```sh
 galaxyd gentx <key_name> 1000000uglx \
@@ -202,7 +203,7 @@ galaxyd gentx <key_name> 1000000uglx \
   --commission-max-change-rate="0.01" \
   --min-self-delegation="1" \
   --identity="5B5AB9D8FBBCEDC6" \
-  --pubkey="glxvalconspub1zcjduepqnxl4ntf8wjn0275smfll4n4lg9cwcurz2qt6dkhrjzf94up8g4cspyyzn9"
+  --pubkey="galaxyvalconspub1zcjduepqnxl4ntf8wjn0275smfll4n4lg9cwcurz2qt6dkhrjzf94up8g4cspyyzn9"
 ```
 
 It will show an output something similar to:
@@ -211,16 +212,16 @@ It will show an output something similar to:
 Genesis transaction written to "/Users/ubuntu/.galaxyd/config/gentx/gentx-eb3b1768d00e66ef83acb1eee59e1d3a35cf76fc.json"
 ```
 
-The result should look something like this [sample gentx file]("/Users/sunnya97/.galaxyd/config/gentx/gentx-eb3b1768d00e66ef83acb1eee59e1d3a35cf76fc.json).
+The result should look something like this [sample gentx file]("/Users/ubuntu/.galaxyd/config/gentx/gentx-eb3b1768d00e66ef83acb1eee59e1d3a35cf76fc.json).
 
 ### Submit Your GenTx
 
-To submit your GenTx for inclusion in the chain, please upload it to the [github.com/galaxy-labs/networks](https://github.com/galaxy-labs/networks) repo until UTC on March 30 00:00.
+To submit your GenTx for inclusion in the chain, please upload it to the [github.com/galaxies-labs/networks](https://github.com/galaxies-labs/networks) repo until UTC on April 7 00:00.
 
 To upload the your genesis file, please follow these steps:
 
 1. Rename the gentx file just generated to gentx-{your-moniker}.json (please do not have any spaces or special characters in the file name)
-2. Fork this repo by going to https://github.com/galaxy-labs/networks, clicking on fork, and choose your account (if multiple).
+2. Fork this repo by going to https://github.com/galaxies-labs/networks, clicking on fork, and choose your account (if multiple).
 3. Clone your copy of the fork to your local machine
 
 ```sh
@@ -238,7 +239,7 @@ cp ~/.galaxyd/config/gentx/gentx-<your-moniker>.json networks/galaxy-1/gentxs/
 ```sh
 cd networks
 git add galaxy-1/gentxs/*
-git commit -m "<your validator moniker> gentx"
+git commit -m "Add <your validator moniker> gentx"
 git push origin main
 ```
 
@@ -252,7 +253,7 @@ git push origin main
 
 **Please join our [Galaxy Discord](https://discord.gg/GrEcUCqr) #validators channel and kindly wait for a next announcement.**
 
-**The Chain Genesis Time is 11:00 UTC on March 31, 2022.**
+**The Chain Genesis Time is expected to be April 8, 2022 UTC.**
 
 ---
 
