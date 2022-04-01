@@ -197,7 +197,7 @@ galaxyd gentx <key_name> 1000000uglx \
   --chain-id="galaxy-1" \
   --moniker={YOUR MONIKER} \
   --website={YOUR WEBSITE} \
-  --details="Welcome to Galaxy universe" \
+  --details={YOUR DETAILS} \
   --commission-rate="0.1" \
   --commission-max-rate="0.20" \
   --commission-max-change-rate="0.01" \
@@ -211,8 +211,6 @@ It will show an output something similar to:
 ```sh
 Genesis transaction written to "/Users/ubuntu/.galaxyd/config/gentx/gentx-eb3b1768d00e66ef83acb1eee59e1d3a35cf76fc.json"
 ```
-
-The result should look something like this [sample gentx file]("/Users/ubuntu/.galaxyd/config/gentx/gentx-eb3b1768d00e66ef83acb1eee59e1d3a35cf76fc.json).
 
 ### Submit Your GenTx
 
