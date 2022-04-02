@@ -170,7 +170,7 @@ If you are using Tendermint's native `priv_validator.json` as your consensus key
 galaxyd tendermint show-validator
 ```
 
-The pubkey should be formatted with the bech32 prefix `glxvalconspub1`.
+The pubkey should be formatted with the bech32 prefix `galaxyvalconspub`.
 
 If you are using a custom signing mechanism such as `tmkms`, please refer to their relevant docs to retrieve your validator pubkey.
 
@@ -205,7 +205,9 @@ galaxyd gentx <key_name> 1000000uglx \
   --commission-rate="0.1" \
   --commission-max-rate="0.20" \
   --commission-max-change-rate="0.01" \
-  --min-self-delegation="1"
+  --min-self-delegation="1" \
+  --identity=$(galaxyd tendermint show-node-id) \
+  --pubkey=$(galaxyd tendermint show-validator)
 ```
 
 It will show an output something similar to:
