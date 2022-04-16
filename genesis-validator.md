@@ -7,9 +7,9 @@ We are at the beginning of creating our infinite, one and only universe. You are
 
 Before to register genesis validator, please check your airdrop amount on this page: https://galaxychain.zone/airdrop.
 
-1. Gentxs must be submitted by Before UTC on April 7 00:00.
+1. Gentxs must be submitted by Before UTC on April 22 00:00.
 2. Setting up process is almost the same as cosmos-based networks, especially Osmosis. Also, if you've participate as a validators on a cosmos-based network, this process is generally the same.
-3. As you all know, Galaxy aims to create Metaverse based on NFT and unique worldview. By starting this new journey, we need a wide range of updates continuously to make our metaverse more the universe-like. For this new journey, we all have to actively communicate and get efforts. Please join this [Galaxy Discord](https://discord.gg/GrEcUCqr) and create a new universe.(validator regiter admin : whiteT#0899)
+3. As you all know, Galaxy aims to create Metaverse based on NFT and unique worldview. By starting this new journey, we need a wide range of updates continuously to make our metaverse more the universe-like. For this new journey, we all have to actively communicate and get efforts. Please join this [Galaxy Discord](https://discord.gg/3DgbQDha3V) and create a new universe.(validator regiter admin : whiteT#0899)
 
 ## OS/Minimum server spec
 
@@ -253,9 +253,9 @@ git push origin main
 
 # Part 2
 
-**Please join our [Galaxy Discord](https://discord.gg/GrEcUCqr) #validators channel and kindly wait for a next announcement.**
+**Please join our [Galaxy Discord](https://discord.gg/3DgbQDha3V) #validators channel and kindly wait for a next announcement.**
 
-**The Chain Genesis Time is expected to be April 8, 2022 UTC.**
+**The Chain Genesis Time is expected to be April 25, 2022 UTC.**
 
 ---
 
