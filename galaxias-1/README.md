@@ -12,6 +12,18 @@ RPC
 
 - https://testnet-rpc.galaxychain.zone
 
+<br/>
+<br/>
+
+### 🗣️ — Validators
+
+---
+
+If you want running a validator node on the Galaxy Testnet, check out to on the [Galaxy Testnet Validator Guide](https://github.com/galaxies-labs/networks/blob/main/galaxias-1/testnet-validator.md)
+
+<br/>
+<br/>
+
 # Sync From Genesis Guide (galaxias-1)
 
 This guide will show you how to sync from genesis to the new testnet. PLEASE NOTE, the first block may take a while (up to an hour) to get passed
