@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b6e734d1efb6e0de1ee3302ffe24196c892f87472b0d87cc8c82d88e84f6ec0
-size 578
+{
+    "accounts": [
+        {
+            "address": "galaxy1cqnp6ejqkgxp6lgfvxq3g2drq0pjj29hers276"
+        },
+        {
+            "address": "galaxy1exxrn8mupa0nrgx2zd5jmpvh6yhxafd4hhpf3w"
+        },
+        {
+            "address": "galaxy1tpxdpzd67e0auczmz8v34n8a9f66c4lyxlvkly"
+        },
+        {
+            "address": "galaxy1n4s2w70uqqurl76lxzje2g2x6m9q3ypuyt50hw"
+        },
+        {
+            "address": "galaxy1lva3zfez6e3mccctx3q2906smkr4u0kyzh7spa"
+        },
+        {
+            "address": "galaxy1x7d3kndrl0qtkg3s34cly7fdjrpwhn2dm8zz63"
+        }
+    ]
+}

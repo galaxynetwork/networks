@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3e7395e55e4fe302f5fc87632a9948f9126494c6025433e73b7041e03dbb132c
-size 871
+{
+    "account": {
+        "type": "multisig",
+        "threshold": 3,
+        "@type": "/cosmos.crypto.multisig.LegacyAminoPubKey",
+        "address": "galaxy13rp8veydnyahvgk8ft2sej4utc3dfrp2gqrvkj",
+        "pubs": [
+            {
+                "@type": "/cosmos.crypto.secp256k1.PubKey",
+                "key": "ArwK2ZEHrqHX0GcDrwL44s26GF9O77pDV1oVfP4uvRPv"
+            },
+            {
+                "@type": "/cosmos.crypto.secp256k1.PubKey",
+                "key": "A7JHR7wEE/RqBDkL7qWyx790SAfg4RMci0ytQ64G/YAf"
+            },
+            {
+                "@type": "/cosmos.crypto.secp256k1.PubKey",
+                "key": "AikYl+fr25uNPlvS+G+1sV27SxF5/z+BxHOHttX87/Qo"
+            },
+            {
+                "@type": "/cosmos.crypto.secp256k1.PubKey",
+                "key": "Ah5zXQr0oNkPtyOGqsyCpyJNSa0zQjGBe8tlr+BVw/m4"
+            }
+        ]
+    }
+}
