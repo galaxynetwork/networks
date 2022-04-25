@@ -10,7 +10,7 @@ If you wish to become a Genesis Validator after participating in the Testnet Val
 Submit your validator information and get the $GLX on the Discord faucet channel.
 <br>
 [Galaxy Discord - (Faucet)](https://discord.gg/97GWGpDCzW)
-(validator regiter admin : whiteT#0899)
+(validator register admin : whiteT#0899)
 
 ### Claiming Testnet $GLX:
 

@@ -7,21 +7,21 @@ We are at the beginning of creating our infinite, one and only universe. You are
 
 Before to register genesis validator, please check your airdrop amount on this page: https://galaxychain.zone/airdrop.
 
-1. Gentxs must be submitted by Before UTC on April 22 00:00.
+1. Gentxs must be submitted by Before UTC on April 25 23:59.
 2. Setting up process is almost the same as cosmos-based networks, especially Osmosis. Also, if you've participate as a validators on a cosmos-based network, this process is generally the same.
-3. As you all know, Galaxy aims to create Metaverse based on NFT and unique worldview. By starting this new journey, we need a wide range of updates continuously to make our metaverse more the universe-like. For this new journey, we all have to actively communicate and get efforts. Please join this [Galaxy Discord](https://discord.gg/3DgbQDha3V) and create a new universe.(validator regiter admin : whiteT#0899)
+3. As you all know, Galaxy aims to create Metaverse based on NFT and unique worldview. By starting this new journey, we need a wide range of updates continuously to make our metaverse more the universe-like. For this new journey, we all have to actively communicate and get efforts. Please join this [Galaxy Discord](https://discord.gg/3DgbQDha3V) and create a new universe.(validator register admin : whiteT#0899, jinhopkg)
 
 ## OS/Minimum server spec
 
 - System OS : Ubuntu 18.04
 - 4 or more physical<sup>[1]</sup> CPU cores
 - At least 500GB of SSD disk storage
-- At least 8GB of memory
+- At least 16GB of memory
 - At least 100mbps network bandwidth
 
 ### Install Go
 
-Galaxy is built using Go and requires Go version 1.16+. In this example, we will be installing Go on the above Ubuntu 20.04:
+Galaxy is built using Go and requires Go version 1.16+. In this example, we will be installing Go on the above Ubuntu 18.04:
 
 ```sh
 # First remove any existing old Go installation
@@ -52,7 +52,7 @@ go version
 
 ### Get Galaxy Source Code
 
-Use git to retrieve Galaxy source code from the [official repo](https://github.com/galaxies-labs/galaxy), and checkout the `genesis` tag, which contains the latest stable release.
+Use git to retrieve Galaxy source code from the [official repo](https://github.com/galaxies-labs/galaxy), and checkout the `launch-gentxs` tag, which contains the latest stable release.
 
 ```sh
 git clone https://github.com/galaxies-labs/galaxy
@@ -78,7 +78,7 @@ galaxyd version --long
 name: galaxy
 server_name: galaxyd
 version: launch-gentxs
-commit: a50188d23ff33d13c6ea9ad09a4251df3de8d822
+commit: 941005fd26071b8018bb2107be1077b12e242c88
 build_tags: netgo,ledger
 go: go version go1.16.6 linux/amd64
 ```
@@ -115,7 +115,7 @@ curl https://media.githubusercontent.com/media/galaxies-labs/networks/main/galax
 
 ### Import Validator Key
 
-The create a gentx, you will need the private key to an address that received an allocation in the airdrop.
+To generate a gentx, you will need the private key to an address that received an allocation in the airdrop or address that incentivized on testnet.
 
 There are a couple options for how to import a key into `galaxyd`.
 
@@ -190,7 +190,7 @@ To create the genesis transaction, you will have to choose the following paramet
 - identity (keybase key hash, this is used to get validator logos in block explorers. optional)
 - pubkey (gotten in previous step)
 
-Note that your gentx will be rejected if you use an amount greater than what you have as liquid from the airdrop. Recall only 20% of your fairdrop allocation is liquid at genesis. Also, note that Galaxy has a chain-mandated minimum commission rate of 5%.
+Note that your gentx will be rejected if you use an amount greater than incentivized quantity or greater than what you have as liquid from the airdrop. Recall only 20% of your fairdrop allocation is liquid at genesis. Also, note that Galaxy has a chain-mandated minimum commission rate of 5%.
 
 If you would like to override the memo field, use the `--ip` and `--node-id` flags.
 
@@ -206,7 +206,7 @@ galaxyd gentx <key_name> 1000000uglx \
   --commission-max-rate="0.20" \
   --commission-max-change-rate="0.01" \
   --min-self-delegation="1" \
-  --identity=$(galaxyd tendermint show-node-id) \
+  --identity={YOUR KEY HASH FROM keybase.io} \
   --pubkey=$(galaxyd tendermint show-validator)
 ```
 
@@ -218,7 +218,7 @@ Genesis transaction written to "/Users/ubuntu/.galaxy/config/gentx/gentx-eb3b176
 
 ### Submit Your GenTx
 
-To submit your GenTx for inclusion in the chain, please upload it to the [github.com/galaxies-labs/networks](https://github.com/galaxies-labs/networks) repo until UTC on April 7 00:00.
+To submit your GenTx for inclusion in the chain, please upload it to the [github.com/galaxies-labs/networks](https://github.com/galaxies-labs/networks) repo until UTC on April 25 23:59.
 
 To upload the your genesis file, please follow these steps:
 
@@ -255,7 +255,7 @@ git push origin main
 
 **Please join our [Galaxy Discord](https://discord.gg/3DgbQDha3V) #validators channel and kindly wait for a next announcement.**
 
-**The Chain Genesis Time is expected to be April 25, 2022 UTC.**
+**The Chain Genesis Time is expected to be April 28, 2022 10:00/am UTC.**
 
 ---
 
