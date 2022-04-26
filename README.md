@@ -16,6 +16,15 @@ A repository for coordinating with Galaxy genesis validators and documenting ins
 
 <br/>
 
+### 👤 — Node Operators
+
+---
+
+If you're interested in running a node on the current Galaxy, check out the docs to [Join the Galaxy Mainnet](https://github.com/galaxies-labs/networks/blob/main/join-mainnet.md).
+
+<br/>
+<br/>
+
 ### 🗣️ — Validators
 
 ---
