@@ -1,3 +1,61 @@
-version https: //git-lfs.github.com/spec/v1
-oid sha256: 8d4e8f4cb2c75dd621ca4b4d3ab0ef69109da79a4ecf5d3111f72bde3d1fb71a
-size 1358
+{
+    "body": {
+        "messages": [
+            {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                    "moniker": "POSTCAPITALIST🎩",
+                    "identity": "CBFDCD0D9180878B",
+                    "website": "https://blog.postcapitalist.io",
+                    "security_contact": "",
+                    "details": "Validator without Capital 💸  |  GIVE MORE  🔄  TAKE LESS  |  🪐Our missions - https://blog.postcapitalist.io/charity-validator-postcapitalist-beginning"
+                },
+                "commission": {
+                    "rate": "0.110000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.020000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "galaxy1wqvu7rl5gr5nyrht9stcfzdztah6a46serlxlz",
+                "validator_address": "galaxyvaloper1wqvu7rl5gr5nyrht9stcfzdztah6a46syzvxuw",
+                "pubkey": {
+                    "@type": "/cosmos.crypto.ed25519.PubKey",
+                    "key": "WSyNQX2wvT3hO2SpZPuv87wOdf1LRCR7ees9NMFjvrQ="
+                },
+                "value": {
+                    "denom": "uglx",
+                    "amount": "1000000"
+                }
+            }
+        ],
+        "memo": "cdd48ca99b08b7662c8b657a13fd3c4f5f7e0aeb@65.108.2.110:26656",
+        "timeout_height": "0",
+        "extension_options": [],
+        "non_critical_extension_options": []
+    },
+    "auth_info": {
+        "signer_infos": [
+            {
+                "public_key": {
+                    "@type": "/cosmos.crypto.secp256k1.PubKey",
+                    "key": "A0GkmYIopK7LBOBY9KUEDM6LATXwBXh+5REGvuJf7JWS"
+                },
+                "mode_info": {
+                    "single": {
+                        "mode": "SIGN_MODE_DIRECT"
+                    }
+                },
+                "sequence": "0"
+            }
+        ],
+        "fee": {
+            "amount": [],
+            "gas_limit": "200000",
+            "payer": "",
+            "granter": ""
+        }
+    },
+    "signatures": [
+        "FiiI60eT5ZAky932FZ8q4Ye2ucxDrx2LdoV27OPxc7kLulQuQLNWuLV6VCoLfDFGzg3m8IOf9EnHe8jCEpIw0g=="
+    ]
+}
