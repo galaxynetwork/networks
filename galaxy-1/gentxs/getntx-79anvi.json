@@ -1,1 +1,61 @@
-{"body":{"messages":[{"@type":"/cosmos.staking.v1beta1.MsgCreateValidator","description":{"moniker":"👋 79anvi 🍀","identity":"542DBC35E8363484","website":"https://79anvi.com","security_contact":"","details":"kind validator"},"commission":{"rate":"0.100000000000000000","max_rate":"0.200000000000000000","max_change_rate":"0.050000000000000000"},"min_self_delegation":"1","delegator_address":"galaxy1qeln3m90f3p0erclyyczspeeeujslcxyvhnej6","validator_address":"galaxyvaloper1qeln3m90f3p0erclyyczspeeeujslcxy3kqe3k","pubkey":{"@type":"/cosmos.crypto.ed25519.PubKey","key":"3dgDrQhStaRhClPRTCl2JjnrsqANd3KXvRbpmzlNda4="},"value":{"denom":"uglx","amount":"1000000"}}],"memo":"55e5942e5b93cefe05b99d5954d1397c9b94bc3e@95.217.118.96:26656","timeout_height":"0","extension_options":[],"non_critical_extension_options":[]},"auth_info":{"signer_infos":[{"public_key":{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"AjmkhvESzKwwJ1cTff3iK03Ts1gXBTLqGFfclq+oJiCM"},"mode_info":{"single":{"mode":"SIGN_MODE_DIRECT"}},"sequence":"0"}],"fee":{"amount":[],"gas_limit":"200000","payer":"","granter":""}},"signatures":["6nCf65dCmy5N6E2i63cSDYNGsIzDSwWACd00mAgVois+EUUiQi8k6v/kemDYpW5ZNVLnNYpOmLDXLACYzXig4w=="]}
+{
+    "body": {
+        "messages": [
+            {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                    "moniker": "👋 79anvi 🍀",
+                    "identity": "542DBC35E8363484",
+                    "website": "https://79anvi.com",
+                    "security_contact": "",
+                    "details": "kind validator"
+                },
+                "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.050000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "galaxy1qeln3m90f3p0erclyyczspeeeujslcxyvhnej6",
+                "validator_address": "galaxyvaloper1qeln3m90f3p0erclyyczspeeeujslcxy3kqe3k",
+                "pubkey": {
+                    "@type": "/cosmos.crypto.ed25519.PubKey",
+                    "key": "3dgDrQhStaRhClPRTCl2JjnrsqANd3KXvRbpmzlNda4="
+                },
+                "value": {
+                    "denom": "uglx",
+                    "amount": "1000000"
+                }
+            }
+        ],
+        "memo": "55e5942e5b93cefe05b99d5954d1397c9b94bc3e@95.217.118.96:26656",
+        "timeout_height": "0",
+        "extension_options": [],
+        "non_critical_extension_options": []
+    },
+    "auth_info": {
+        "signer_infos": [
+            {
+                "public_key": {
+                    "@type": "/cosmos.crypto.secp256k1.PubKey",
+                    "key": "AjmkhvESzKwwJ1cTff3iK03Ts1gXBTLqGFfclq+oJiCM"
+                },
+                "mode_info": {
+                    "single": {
+                        "mode": "SIGN_MODE_DIRECT"
+                    }
+                },
+                "sequence": "0"
+            }
+        ],
+        "fee": {
+            "amount": [],
+            "gas_limit": "200000",
+            "payer": "",
+            "granter": ""
+        }
+    },
+    "signatures": [
+        "6nCf65dCmy5N6E2i63cSDYNGsIzDSwWACd00mAgVois+EUUiQi8k6v/kemDYpW5ZNVLnNYpOmLDXLACYzXig4w=="
+    ]
+}
