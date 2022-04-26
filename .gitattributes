@@ -1,2 +1,4 @@
 *.tar.gz filter=lfs diff=lfs merge=lfs -text
-*.json filter=lfs diff=lfs merge=lfs -text
+galaxy-1/pregenesis.json filter=lfs diff=lfs merge=lfs -text
+galaxy-1/genesis.json filter=lfs diff=lfs merge=lfs -text
+galaxias-1/genesis.json filter=lfs diff=lfs merge=lfs -text
