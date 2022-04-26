@@ -1,2 +1,44 @@
-# networks
-Galaxy networks information
+# Galaxy Networks
+
+A repository for coordinating with Galaxy genesis validators and documenting instructions of Galaxy Network launches and upgrades.
+
+<br/>
+
+## Mainnet Status
+
+---
+
+### 28 April, 2022 09:00 UTC
+
+- Chain ID: galaxy-1
+- Native Token: $GLX
+- Core Version: [v1.0.0](https://github.com/galaxies-labs/networks/releases/tag/v1.0.0)
+
+<br/>
+
+### 🗣️ — Validators
+
+---
+
+If you're running a validator node on the Galaxy, reach out to a 'jinhopkg#3601' on the [Galaxy Discord](https://discord.gg/3DgbQDha3V) to join the `#validators` channel.
+
+<br/>
+<br/>
+
+### 👥 — Testnet
+
+---
+
+To participate in or utilize the current Galaxy testnet, take a look at the [galaxias-1(testnet)](https://github.com/galaxies-labs/networks/tree/main/galaxias-1) guide.
+
+<br/>
+<br/>
+
+### 🌐 — Roadmap
+
+---
+
+For an overview of upcoming changes to the Galaxy take a look at the [Roadmap](https://galaxychain.zone).
+
+<br/>
+<br/>
