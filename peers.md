@@ -1,5 +1,6 @@
 # galaxy-1 peer list
 
+
 ## StakeLab
 
 bf446887a7a00c8babfeba2f92ba569a206a3ea7@65.108.71.140:26676
@@ -11,6 +12,10 @@ bf446887a7a00c8babfeba2f92ba569a206a3ea7@65.108.71.140:26676
 ## Blockscope
 
 a4bd8fed416aa29d9cc061e2b9dffa7f4b679c91@65.21.131.144:30656
+
+## Galaxies Labs (Seed)
+
+574e8402e255f895680db2904168724258fd6ff8@13.125.60.249:26656
 
 ## Paranormal Brothers
 
