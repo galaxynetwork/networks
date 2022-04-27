@@ -1,0 +1,25 @@
+# galaxy-1 peer list
+
+## StakeLab
+
+bf446887a7a00c8babfeba2f92ba569a206a3ea7@65.108.71.140:26676
+
+## OtterSync
+
+1e9ee1911298a15128c8485ea47b18be08939e01@136.244.29.116:38656
+
+## Blockscope
+
+a4bd8fed416aa29d9cc061e2b9dffa7f4b679c91@65.21.131.144:30656
+
+## Paranormal Brothers
+
+801f4e17769bd2ee02b27720d901a42cb8d052ea@65.108.192.3:24656
+
+## TAKESHI
+
+8fc2d8c2fadd278eae617a9c2a2f008e01e8ef68@206.246.71.251:26656
+
+## Pathrocknetwork
+
+10f7caa39969dc36450b138848a06e7deabe6fed@95.111.244.128:26656

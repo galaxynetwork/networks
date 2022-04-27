@@ -2,9 +2,7 @@
 
 ## _Genesis Start Time: 28 April, 2022 09:00 UTC_
 
----
-
-<br>
+### 👥 [peer list](https://github.com/galaxies-labs/networks/blob/main/peers.md)
 
 ## OS/Minimum server spec
 
@@ -108,9 +106,11 @@ curl https://media.githubusercontent.com/media/galaxies-labs/networks/main/galax
 ### Genesis sha256
 
 ```sh
-jq -S -f normalize.jq  ~/.galaxy/config/genesis.json | shasum -a 256
+shasum -a 256 ~/.galaxy/config/genesis.json
+> 2003cfaca53c3f9120a36957103fbbe6562d4f6c6c50a3e9502c49dbb8e2ba5b
 
-2003cfaca53c3f9120a36957103fbbe6562d4f6c6c50a3e9502c49dbb8e2ba5b
+sha256sum ~/.galaxy/config/genesis.json
+> 2003cfaca53c3f9120a36957103fbbe6562d4f6c6c50a3e9502c49dbb8e2ba5b
 ```
 
 ### Start galaxyd
