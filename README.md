@@ -16,6 +16,15 @@ A repository for coordinating with Galaxy genesis validators and documenting ins
 
 <br/>
 
+### 🚀 — Explorers
+
+---
+
+- [POSTCAPITALIST](https://explorer.postcapitalist.io/)
+
+<br/>
+<br/>
+
 ### 👤 — Node Operators
 
 ---

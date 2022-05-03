@@ -2,7 +2,13 @@
 
 ## _Genesis Start Time: 28 April, 2022 09:00 UTC_
 
+<br/>
+
 ### 👥 [peer list](https://github.com/galaxies-labs/networks/blob/main/peers.md)
+
+### 📸 [snapshots](https://github.com/galaxies-labs/networks/blob/main/snapshots.md)
+
+ <br/>
 
 ## OS/Minimum server spec
 
