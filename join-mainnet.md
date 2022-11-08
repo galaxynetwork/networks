@@ -4,9 +4,9 @@
 
 <br/>
 
-### 👥 [peer list](https://github.com/galaxies-labs/networks/blob/main/peers.md)
+### 👥 [peer list](https://github.com/galaxynetwork/networks/blob/main/peers.md)
 
-### 📸 [snapshots](https://github.com/galaxies-labs/networks/blob/main/snapshots.md)
+### 📸 [snapshots](https://github.com/galaxynetwork/networks/blob/main/snapshots.md)
 
  <br/>
 
@@ -51,10 +51,10 @@ go version
 
 ### Get Galaxy Source Code
 
-Use git to retrieve Galaxy source code from the [official repo](https://github.com/galaxies-labs/galaxy), and checkout the `v1.0.0` tag, which contains the latest stable release.
+Use git to retrieve Galaxy source code from the [official repo](https://github.com/galaxynetwork/galaxy), and checkout the `v1.0.0` tag, which contains the latest stable release.
 
 ```sh
-git clone https://github.com/galaxies-labs/galaxy
+git clone https://github.com/galaxynetwork/galaxy
 cd galaxy
 git checkout v1.0.0
 ```
@@ -106,7 +106,7 @@ This will create a new `.galaxyd` folder in your HOME directory.
 ```sh
 cd $HOME/.galaxy/config/
 
-curl https://media.githubusercontent.com/media/galaxies-labs/networks/main/galaxy-1/genesis.json > $HOME/.galaxy/config/genesis.json
+curl https://media.githubusercontent.com/media/galaxynetwork/networks/main/galaxy-1/genesis.json > $HOME/.galaxy/config/genesis.json
 ```
 
 ### Genesis sha256

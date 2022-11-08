@@ -19,7 +19,7 @@ RPC
 
 ---
 
-If you want running a validator node on the Galaxy Testnet, check out to on the [Galaxy Testnet Validator Guide](https://github.com/galaxies-labs/networks/blob/main/galaxias-1/testnet-validator.md)
+If you want running a validator node on the Galaxy Testnet, check out to on the [Galaxy Testnet Validator Guide](https://github.com/galaxynetwork/networks/blob/main/galaxias-1/testnet-validator.md)
 
 <br/>
 <br/>
@@ -31,7 +31,7 @@ This guide will show you how to sync from genesis to the new testnet. PLEASE NOT
 Clone the galaxy repo and install v1.0.0
 
 ```
-git clone https://github.com/galaxies-labs/galaxy.git
+git clone https://github.com/galaxynetwork/galaxy.git
 git checkout v1.0.0
 make install
 ```
@@ -41,7 +41,7 @@ Set up testnet genesis
 ```
 galaxyd init NODENAME --chain-id galaxias-1
 cd ~/.galaxy/config/
-curl https://media.githubusercontent.com/media/galaxies-labs/networks/main/galaxias-1/genesis.json > genesis.json
+curl https://media.githubusercontent.com/media/galaxynetwork/networks/main/galaxias-1/genesis.json > genesis.json
 ```
 
 Edit the config.toml:

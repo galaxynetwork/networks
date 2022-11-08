@@ -57,10 +57,10 @@ go version
 
 ### Get Galaxy Source Code
 
-Use git to retrieve Galaxy source code from the [official repo](https://github.com/galaxies-labs/galaxy), and checkout the `v1.0.0` tag, which contains the testnet stable release.
+Use git to retrieve Galaxy source code from the [official repo](https://github.com/galaxynetwork/galaxy), and checkout the `v1.0.0` tag, which contains the testnet stable release.
 
 ```sh
-git clone https://github.com/galaxies-labs/galaxy
+git clone https://github.com/galaxynetwork/galaxy
 cd galaxy
 git checkout v1.0.0
 ```
@@ -115,7 +115,7 @@ You can now download the "genesis" file for the test chain. This is a genesis fi
 ```sh
 cd $HOME/.galaxy/config/
 
-curl https://media.githubusercontent.com/media/galaxies-labs/networks/main/galaxias-1/genesis.json > $HOME/.galaxy/config/genesis.json
+curl https://media.githubusercontent.com/media/galaxynetwork/networks/main/galaxias-1/genesis.json > $HOME/.galaxy/config/genesis.json
 ```
 
 ### Import Validator Key

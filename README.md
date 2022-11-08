@@ -12,7 +12,7 @@ A repository for coordinating with Galaxy genesis validators and documenting ins
 
 - Chain ID: galaxy-1
 - Native Token: $GLX
-- Core Version: [v1.0.0](https://github.com/galaxies-labs/networks/releases/tag/v1.0.0)
+- Core Version: [v1.0.0](https://github.com/galaxynetwork/networks/releases/tag/v1.0.0)
 
 <br/>
 
@@ -29,7 +29,7 @@ A repository for coordinating with Galaxy genesis validators and documenting ins
 
 ---
 
-If you're interested in running a node on the current Galaxy, check out the docs to [Join the Galaxy Mainnet](https://github.com/galaxies-labs/networks/blob/main/join-mainnet.md).
+If you're interested in running a node on the current Galaxy, check out the docs to [Join the Galaxy Mainnet](https://github.com/galaxynetwork/networks/blob/main/join-mainnet.md).
 
 <br/>
 <br/>
@@ -47,7 +47,7 @@ If you're running a validator node on the Galaxy, reach out to a 'jinhopkg#3601'
 
 ---
 
-To participate in or utilize the current Galaxy testnet, take a look at the [galaxias-1(testnet)](https://github.com/galaxies-labs/networks/tree/main/galaxias-1) guide.
+To participate in or utilize the current Galaxy testnet, take a look at the [galaxias-1(testnet)](https://github.com/galaxynetwork/networks/tree/main/galaxias-1) guide.
 
 <br/>
 <br/>
