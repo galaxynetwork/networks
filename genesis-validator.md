@@ -52,10 +52,10 @@ go version
 
 ### Get Galaxy Source Code
 
-Use git to retrieve Galaxy source code from the [official repo](https://github.com/galaxies-labs/galaxy), and checkout the `launch-gentxs` tag, which contains the latest stable release.
+Use git to retrieve Galaxy source code from the [official repo](https://github.com/galaxynetwork/galaxy), and checkout the `launch-gentxs` tag, which contains the latest stable release.
 
 ```sh
-git clone https://github.com/galaxies-labs/galaxy
+git clone https://github.com/galaxynetwork/galaxy
 cd galaxy
 git checkout launch-gentxs
 ```
@@ -110,7 +110,7 @@ You can now download the "pregenesis" file for the chain. This is a genesis file
 ```sh
 cd $HOME/.galaxy/config/
 
-curl https://media.githubusercontent.com/media/galaxies-labs/networks/main/galaxy-1/pregenesis.json > $HOME/.galaxy/config/genesis.json
+curl https://media.githubusercontent.com/media/galaxynetwork/networks/main/galaxy-1/pregenesis.json > $HOME/.galaxy/config/genesis.json
 ```
 
 ### Import Validator Key
@@ -218,12 +218,12 @@ Genesis transaction written to "/Users/ubuntu/.galaxy/config/gentx/gentx-eb3b176
 
 ### Submit Your GenTx
 
-To submit your GenTx for inclusion in the chain, please upload it to the [github.com/galaxies-labs/networks](https://github.com/galaxies-labs/networks) repo until UTC on April 25 23:59.
+To submit your GenTx for inclusion in the chain, please upload it to the [github.com/galaxynetwork/networks](https://github.com/galaxynetwork/networks) repo until UTC on April 25 23:59.
 
 To upload the your genesis file, please follow these steps:
 
 1. Rename the gentx file just generated to gentx-{your-moniker}.json (please do not have any spaces or special characters in the file name)
-2. Fork this repo by going to https://github.com/galaxies-labs/networks, clicking on fork, and choose your account (if multiple).
+2. Fork this repo by going to https://github.com/galaxynetwork/networks, clicking on fork, and choose your account (if multiple).
 3. Clone your copy of the fork to your local machine
 
 ```sh
