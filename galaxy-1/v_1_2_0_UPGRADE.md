@@ -57,7 +57,7 @@ git checkout v1.2.0
 make build && make install
 
 # check the version - should be v1.2.0
-# galaxys version --long will be commit 09a33cc6cb5aaaa842621424ff7fce6c9637a212
+# galaxyd version --long will be commit e5c03e5931580fdacd9c14c1ace7c1bb2869489b
 galaxyd version
 ```
 
