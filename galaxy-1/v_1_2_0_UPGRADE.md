@@ -1,6 +1,6 @@
 # Galaxy v1.2.0 Upgrade
 
-The upgrade is scheduled for a date announced on the Discord #validators announcement Channel.
+The upgrade is scheduled for 10:00 AM on November 17, 2022 (UTC).
 
 ## 1. Upgrade Go
 
@@ -94,8 +94,57 @@ rm -v data.tar.gz
 
 ### 4. Restore the backed up `priv_validator_state.json` file to /home/.galaxy/data/ directory
 
-### 5. When all of the above preparations are complete, prepare to restart the Galaxy using the crontab local package or what you want.
+## 5. Prepare to start the Galaxy Node
 
 > There is a risk of slashing if different nodes have different restart times.
->
 > So use the package for convenience.
+>
+> The guide below uses `crontab`.
+
+### 1. Set up the service file
+
+```bash
+# Create a systemd file for your Galaxy service:
+sudo nano /etc/systemd/system/galaxyd.service
+
+# paste and edit <YOUR_USERNAME> with your username
+[Unit]
+Description=Galaxy Daemon
+After=network-online.target
+
+[Service]
+User=<YOUR_USERNAME>
+ExecStart=/home/<YOUR_USERNAME>/go/bin/galaxyd start
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
+```
+
+**_This assumes $HOME/.galaxy to be your directory for config and data. Your actual directory locations may vary._**
+
+### 2. Enable the new service before start the service:
+
+```bash
+sudo systemctl enable galaxyd
+```
+
+### 3. Prepare scheduling process for chain restart time using crontab
+
+```bash
+# entered this line in /etc/crontab file:
+# November 17th at 10:00 AM (UTC)
+# timezone must be UTC
+# (Optional) Check your crontab is working well with another test commands.
+00 10 17 11 * root /usr/bin/systemctl start galaxyd
+```
+
+**_ Make sure in advance that the crontab command has /home/ubuntu/.galaxy directory permissions. _**
+
+### 4. Please check the logs during chain restart time and be prepared for unexpected issues.
+
+```bash
+journalctl -u galaxyd -f
+```
